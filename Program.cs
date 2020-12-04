@@ -130,21 +130,21 @@ namespace OnTheRoad
             // Console Sleep //
             System.Threading.Thread.Sleep(2000);
 
-            //Functions.Print("It's already late and freezing, you're done with work and wants to go home. " +
-               // "You get in your car and leave the parking\narea. You're driving on " +
-                // "a long, dark road. You're tired after a long day of work. " +
-                // "Suddenly the phone rings, your wife\nis calling. " +
-                // "After talking for a while, you are startled by a crossing animal. " +
-                // "You suddenly steer to the right\nto avoid collision with the animal. " +
-                // "Trees are coming closer and closer. Before you can even realize\nwhat's " +
-                // "happening, you crash into a tree.", 10);
+            Functions.Print("It's already late and freezing, you're done with work and wants to go home. " +
+               "You get in your car and leave the parking\narea. You're driving on " +
+                "a long, dark road. You're tired after a long day of work. " +
+                "Suddenly the phone rings, your wife\nis calling. " +
+                "After talking for a while, you are startled by a crossing animal. " +
+                "You suddenly steer to the right\nto avoid collision with the animal. " +
+                "Trees are coming closer and closer. Before you can even realize\nwhat's " +
+                "happening, you crash into a tree.", 10);
 
             // Console Sleep //
             System.Threading.Thread.Sleep(2000);
 
-            //Functions.Print("\n\nYou're waking up... dizzy, cold and trying to remember what happend.\n" +
-                // "You feel an incredibly pain on your forehead. You realizing that you've been crashed. \n" +
-                // "When you look around you see that your mobile phone is not working anymore.", 10);
+            Functions.Print("\n\nYou're waking up... dizzy, cold and trying to remember what happend.\n" +
+                "You feel an incredibly pain on your forehead. You realizing that you've been crashed. \n" +
+                "When you look around you see that your mobile phone is not working anymore.", 10);
 
             // Console Sleep //
             System.Threading.Thread.Sleep(1000);
