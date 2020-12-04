@@ -40,9 +40,11 @@ namespace OnTheRoad
             Functions.Print("[A] Start the game! [B] Quit\n\n");
 
             // Create A Variable For Input //
-            String StartGame = Console.ReadLine();
+            string input = "";
+            input = Console.ReadLine();
+            input = input.ToUpper();
 
-            if (StartGame == "a" || StartGame == "A")
+            if (input == "A")
             {
 
                 // Move One Line Up //
@@ -63,7 +65,7 @@ namespace OnTheRoad
                 // Call EnterName //
                 Game.EnterName();
 
-            } else if (StartGame == "b" || StartGame == "B")
+            } else if (input == "B")
             {
 
                 // Move One Line Up //
@@ -83,7 +85,11 @@ namespace OnTheRoad
             } else
             {
 
-                Game.GameOver();
+                // Clear Console //
+                Console.Clear();
+                Console.WriteLine("You didn't type in A or B. Try again.");
+
+                Game.Intro();
 
             }
 
@@ -124,21 +130,21 @@ namespace OnTheRoad
             // Console Sleep //
             System.Threading.Thread.Sleep(2000);
 
-            Functions.Print("It's already late and freezing, you're done with work and wants to go home. " +
-                "You get in your car and leave the parking\narea. You're driving on " +
-                "a long, dark road. You're tired after a long day of work. " +
-                "Suddenly the phone rings, your wife\nis calling. " +
-                "After talking for a while, you are startled by a crossing animal. " +
-                "You suddenly steer to the right\nto avoid collision with the animal. " +
-                "Trees are coming closer and closer. Before you can even realize\nwhat's " +
-                "happening, you crash into a tree.", 10);
+            //Functions.Print("It's already late and freezing, you're done with work and wants to go home. " +
+               // "You get in your car and leave the parking\narea. You're driving on " +
+                // "a long, dark road. You're tired after a long day of work. " +
+                // "Suddenly the phone rings, your wife\nis calling. " +
+                // "After talking for a while, you are startled by a crossing animal. " +
+                // "You suddenly steer to the right\nto avoid collision with the animal. " +
+                // "Trees are coming closer and closer. Before you can even realize\nwhat's " +
+                // "happening, you crash into a tree.", 10);
 
             // Console Sleep //
             System.Threading.Thread.Sleep(2000);
 
-            Functions.Print("\n\nYou're waking up... dizzy, cold and trying to remember what happend.\n" +
-                "You feel an incredibly pain on your forehead. You realizing that you've been crashed. \n" +
-                "When you look around you see that your mobile phone is not working anymore.");
+            //Functions.Print("\n\nYou're waking up... dizzy, cold and trying to remember what happend.\n" +
+                // "You feel an incredibly pain on your forehead. You realizing that you've been crashed. \n" +
+                // "When you look around you see that your mobile phone is not working anymore.", 10);
 
             // Console Sleep //
             System.Threading.Thread.Sleep(1000);
@@ -148,7 +154,7 @@ namespace OnTheRoad
 
             Functions.Print("When you get out of your car to take a look, you see that your car is broken. \n" +
                 "You're in the middle of nowhere, alone and it's cold...\n\n" +
-                "You take a look in the glove box. You've found an old flashlight.\n");
+                "You take a look in the glove box. You've found an old flashlight.\n", 10);
 
             // Add Flashligt To Inventory //
             Inventory.Add("Flashlight");
@@ -167,16 +173,25 @@ namespace OnTheRoad
 
             Functions.Print("You starting to run through the woods when you see a small river. \n");
 
-            // Console Sleep //
+            Game.Choice1();
+
+        }
+
+        // Choice 1 //
+        public static void Choice1()
+
+        {         // Console Sleep //
             System.Threading.Thread.Sleep(1000);
 
             Functions.Print("Would you cross the river or walk around it?\n\n");
             Functions.Print("[A] Cross the river [B] Walk around the river\n\n");
 
             // Create A Variable For Input //
-            String FirstChoice = Console.ReadLine();
+            string input = "";
+            input = Console.ReadLine();
+            input = input.ToUpper();
 
-            if (FirstChoice == "a" || FirstChoice == "A")
+            if (input == "A")
             {
 
                 // Move One Line Up //
@@ -194,7 +209,7 @@ namespace OnTheRoad
                 Game.GameOver();
 
             }
-            else if (FirstChoice == "b" || FirstChoice == "B")
+            else if (input == "B")
             {
 
                 // Move One Line Up //
@@ -215,134 +230,7 @@ namespace OnTheRoad
                 Functions.Print("Would you take a rest under a tree or walk further?\n\n");
                 Functions.Print("[A] Take a rest [B] Walk further\n\n");
 
-                // Create A Variable For Input //
-                String SecondChoice = Console.ReadLine();
-
-                if (SecondChoice == "a" || SecondChoice == "A")
-                {
-
-                    // Move One Line Up //
-                    Console.SetCursorPosition(0, Console.CursorTop - 1);
-
-                    Functions.Print("You decide to take a rest. You sit against a tree en fall asleep. \n" +
-                        "Because of the cold, you've been freezing to death.");
-
-                    // Console Sleep //
-                    System.Threading.Thread.Sleep(1000);
-
-                    // Clear Console //
-                    Console.Clear();
-
-                    Game.GameOver();
-
-                }
-                else if (SecondChoice == "b" || SecondChoice == "B")
-                {
-
-                    // Move One Line Up //
-                    Console.SetCursorPosition(0, Console.CursorTop - 1);
-
-                    Functions.Print("You decided to walk futher, no mather how cold and tired you are. You have to move on. \n");
-
-                    // Console Sleep //
-                    System.Threading.Thread.Sleep(1000);
-
-                    Functions.Print("You look around and see a house. As you come closer to the house you notice \n" +
-                        "that it's an abandoned, wooden house. After a short walk you're entering the house. The door was broken. \n" +
-                        "You're searching for anything that might be usefull. You find some matches. \n\n");
-
-                    // Add Flashligt To Inventory //
-                    Inventory.Add("Matches");
-
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Functions.Print("Added matches to your inventory.");
-
-                    // Console Sleep //
-                    System.Threading.Thread.Sleep(2000);
-
-                    // Clear Console //
-                    Console.Clear();
-
-                    // Reset Color //
-                    Functions.ResetColor();
-
-                    Functions.Print("When you walk into the livingroom you see a fireplace.\n\n");
-
-                    // Console Sleep //
-                    System.Threading.Thread.Sleep(1000);
-
-                    Functions.Print("Would you go outside and create your own fireplace, or would you \n" +
-                        "make a fire inside of the house?\n\n");
-                    Functions.Print("[A] Make a fire outside [B] Make a fire in the house\n\n");
-
-                    // Create A Variable For Input //
-                    String ThirdChoice = Console.ReadLine();
-
-                    if (ThirdChoice == "a" || ThirdChoice == "A")
-                    {
-
-                        // Move One Line Up //
-                        Console.SetCursorPosition(0, Console.CursorTop - 1);
-
-                        Functions.Print("You're taking the matches with you and go outside. When you walk around the house \n" +
-                            "to find a good spot you see a carport. You decide to collect some branches en make a fire close to the \n" +
-                            "carport. You can sit out of the wind and stay warm. You fall asleep... \n\n" +
-                            "Suddenly you wake up, you hear a car coming closer. When you open your eyes your noticing it's a police car. \n" +
-                            "You start signing with your flashlight again. The police car is coming your way. \n\n" +
-                            "When the police officer gets out of his car he's asking you what's happening. You answer that you've been \n" +
-                            "crashed with your car. The police officer calls his colleagues over the radio and tell them that a car \n" +
-                            "has been crashed on Lakeview and he talks to the owner.\n\n" +
-                            "The police officer asks you if he can bring you home. You're so happy that anyone found you.");
-
-                        // Console Sleep //
-                        System.Threading.Thread.Sleep(1000);
-
-                        // Clear Console //
-                        Console.Clear();
-
-                        Game.EndGame();
-
-                    }
-                    else if (ThirdChoice == "b" || ThirdChoice == "B")
-                    {
-
-                        // Move One Line Up //
-                        Console.SetCursorPosition(0, Console.CursorTop - 1);
-
-                        Functions.Print("You collect some branches from outside to make a fire in the house. \n" +
-                            "It becomes warmer, exactly what you needed after this adventure. You're tired and \n" +
-                            "decide to take a rest. After a while, you're waking up because of the heat. When you \n" +
-                            "open your eyes, your noticing that the whole room is in fire. You die in the fire.");
-
-                        // Console Sleep //
-                        System.Threading.Thread.Sleep(1000);
-
-                        // Clear Console //
-                        Console.Clear();
-
-                        Game.GameOver();
-
-                    }
-                    else
-                    {
-
-                        // Clear Console //
-                        Console.Clear();
-
-                        Game.GameOver();
-
-                    }
-
-                }
-                else
-                {
-
-                    // Clear Console //
-                    Console.Clear();
-
-                    Game.GameOver();
-
-                }
+                Game.Choice2();
 
             }
             else
@@ -350,11 +238,156 @@ namespace OnTheRoad
 
                 // Clear Console //
                 Console.Clear();
+                Console.WriteLine("You didn't type in A or B. Try again.");
+
+                Game.Choice1();
+
+            }
+        }
+
+        // Choice 2 //
+        public static void Choice2()
+        {
+            // Create A Variable For Input //
+            string input = "";
+            input = Console.ReadLine();
+            input = input.ToUpper();
+
+            if (input == "A")
+            {
+
+                // Move One Line Up //
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+
+                Functions.Print("You decide to take a rest. You sit against a tree en fall asleep. \n" +
+                    "Because of the cold, you've been freezing to death.");
+
+                // Console Sleep //
+                System.Threading.Thread.Sleep(1000);
+
+                // Clear Console //
+                Console.Clear();
 
                 Game.GameOver();
 
             }
+            else if (input == "B")
+            {
 
+                // Move One Line Up //
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+
+                Functions.Print("You decided to walk futher, no mather how cold and tired you are. You have to move on. \n");
+
+                // Console Sleep //
+                System.Threading.Thread.Sleep(1000);
+
+                Functions.Print("You look around and see a house. As you come closer to the house you notice \n" +
+                    "that it's an abandoned, wooden house. After a short walk you're entering the house. The door was broken. \n" +
+                    "You're searching for anything that might be usefull. You find some matches. \n\n");
+
+                // Add Flashligt To Inventory //
+                Inventory.Add("Matches");
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Functions.Print("Added matches to your inventory.");
+
+                // Console Sleep //
+                System.Threading.Thread.Sleep(2000);
+
+                // Clear Console //
+                Console.Clear();
+
+                // Reset Color //
+                Functions.ResetColor();
+
+                Functions.Print("When you walk into the livingroom you see a fireplace.\n\n");
+
+                // Console Sleep //
+                System.Threading.Thread.Sleep(1000);
+
+                Functions.Print("Would you go outside and create your own fireplace, or would you \n" +
+                    "make a fire inside of the house?\n\n");
+                Functions.Print("[A] Make a fire outside [B] Make a fire in the house\n\n");
+
+                Game.Choice3();
+
+            }
+            else
+            {
+
+                // Clear Console //
+                Console.Clear();
+                Console.WriteLine("You didn't type in A or B. Try again.");
+
+                Game.Choice2();
+
+            }
+        }
+
+        // Choice 3 //
+        public static void Choice3()
+        {
+            // Create A Variable For Input //
+            string input = "";
+            input = Console.ReadLine();
+            input = input.ToUpper();
+
+            if (input == "A")
+            {
+
+                // Move One Line Up //
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+
+                Functions.Print("You're taking the matches with you and go outside. When you walk around the house \n" +
+                    "to find a good spot you see a carport. You decide to collect some branches en make a fire close to the \n" +
+                    "carport. You can sit out of the wind and stay warm. You fall asleep... \n\n" +
+                    "Suddenly you wake up, you hear a car coming closer. When you open your eyes your noticing it's a police car. \n" +
+                    "You start signing with your flashlight again. The police car is coming your way. \n\n" +
+                    "When the police officer gets out of his car he's asking you what's happening. You answer that you've been \n" +
+                    "crashed with your car. The police officer calls his colleagues over the radio and tell them that a car \n" +
+                    "has been crashed on Lakeview and he talks to the owner.\n\n" +
+                    "The police officer asks you if he can bring you home. You're so happy that anyone found you.");
+
+                // Console Sleep //
+                System.Threading.Thread.Sleep(1000);
+
+                // Clear Console //
+                Console.Clear();
+
+                Game.EndGame();
+
+            }
+            else if (input == "B")
+            {
+
+                // Move One Line Up //
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+
+                Functions.Print("You collect some branches from outside to make a fire in the house. \n" +
+                    "It becomes warmer, exactly what you needed after this adventure. You're tired and \n" +
+                    "decide to take a rest. After a while, you're waking up because of the heat. When you \n" +
+                    "open your eyes, your noticing that the whole room is in fire. You die in the fire.");
+
+                // Console Sleep //
+                System.Threading.Thread.Sleep(1000);
+
+                // Clear Console //
+                Console.Clear();
+
+                Game.GameOver();
+
+            }
+            else
+            {
+
+                // Clear Console //
+                Console.Clear();
+                Console.WriteLine("You didn't type in A or B. Try again.");
+
+                Game.Choice3();
+
+            }
         }
 
         // Function GameOver //
