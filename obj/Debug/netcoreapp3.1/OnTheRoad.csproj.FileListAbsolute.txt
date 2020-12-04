@@ -1,0 +1,13 @@
+A:\School\C#\OnTheRoad\bin\Debug\netcoreapp3.1\OnTheRoad.exe
+A:\School\C#\OnTheRoad\bin\Debug\netcoreapp3.1\OnTheRoad.deps.json
+A:\School\C#\OnTheRoad\bin\Debug\netcoreapp3.1\OnTheRoad.runtimeconfig.json
+A:\School\C#\OnTheRoad\bin\Debug\netcoreapp3.1\OnTheRoad.runtimeconfig.dev.json
+A:\School\C#\OnTheRoad\bin\Debug\netcoreapp3.1\OnTheRoad.dll
+A:\School\C#\OnTheRoad\bin\Debug\netcoreapp3.1\OnTheRoad.pdb
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.csprojAssemblyReference.cache
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.AssemblyInfoInputs.cache
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.AssemblyInfo.cs
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.csproj.CoreCompileInputs.cache
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.dll
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.pdb
+A:\School\C#\OnTheRoad\obj\Debug\netcoreapp3.1\OnTheRoad.genruntimeconfig.cache
