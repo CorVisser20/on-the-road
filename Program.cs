@@ -259,7 +259,7 @@ namespace OnTheRoad
                 // Move One Line Up //
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
 
-                Functions.Print("You decide to take a rest. You sit against a tree en fall asleep. \n" +
+                Functions.Print("You decide to take a rest. You sit against a tree and fall asleep. \n" +
                     "Because of the cold, you've been freezing to death.");
 
                 // Console Sleep //
@@ -412,6 +412,9 @@ namespace OnTheRoad
             Console.WriteLine(Title);
 
             Functions.Print("Quiting game...\n", 80);
+
+            // Console Sleep //
+            System.Threading.Thread.Sleep(4000);
             Environment.Exit(0);
 
             // Reset Color //
@@ -447,6 +450,10 @@ namespace OnTheRoad
             {
                 Functions.Print(item + "\n");
             }
+
+            // Console Sleep //
+            System.Threading.Thread.Sleep(4000);
+            Environment.Exit(0);
 
         }
 
